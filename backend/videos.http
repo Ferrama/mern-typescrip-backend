@@ -1,0 +1,25 @@
+
+@api = http://localhost:9000
+GET {{api}}/videos/
+
+###
+GET {{api}}/video/62476dd027d3712384c12cd8
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "title": "ts node video",
+    "url" :"https://www.youtube.com/watch?v=_RZ-T6TxP7w&list=WL&index=4&t=1385s",
+    "description" : "video number 1 off colection"
+}
+
+###
+DELETE {{api}}/videos/624778edeb8f369ceb8157cd
+###
+PUT {{api}}/videos/62477a31775b5e15e7421e49
+Content-Type: application/json
+
+{
+    "title" : "ts node video update"
+}
